@@ -1,0 +1,116 @@
+<html>
+<head></head>
+<style>
+div{display:inline-block;
+padding:10px;
+box-shadow: 0 8px 6px -6px black;
+}
+div:hover{
+box-shadow: 2px 8px 14px -6px black;
+}
+p{color:#fff;
+}
+
+
+.viv,.viv1,.vive,.vivek{border:1px solid black;
+border-radius:5px;
+height:100px;
+width:100px;
+text-align:center;
+margin-top:20%;
+transition-duration:1s;
+}
+.viv{margin-left:30%;
+}
+#viv{
+margin-left:-0.6%;
+font-family:verdana;
+color:#0E4C92;
+}
+#viv1{
+margin-left:-1.4%;
+font-family:arial,san sarif;
+color:red;
+}
+#vive{
+margin-left:-0.8%;
+font-family:arial,san sarif;
+color:#00d3fd;
+}
+#vivek{
+margin-left:-1.5%;
+font-family:arial,san sarif;
+color:#4f93e0;
+}
+#viv,#viv1,#vive,#vivek{position:absolute;
+font-size:50px;
+margin-top:1.5%;
+}
+.viv:hover{background-color:#0E4C92;
+}
+.viv1:hover{background-color:red;
+}
+.vive:hover{background-color:#00d3fd;
+}
+.vivek:hover{background-color:#4f93e0;
+}
+.viv:hover #viv,.viv1:hover #viv1,.vive:hover #vive,.vivek:hover #vivek{
+color:white;
+animation: need 1s;
+animation-iteration-count: 1;
+}
+@keyframes need{
+0%{transform:scale(1.5);
+}
+100%{
+transform:scale(3);
+opacity:0;
+transition:opacity 1s;
+}
+}
+p{color:#fff;
+}
+.tool {
+visibility:hidden;
+position:absolute;
+margin-top:-3.5%;
+background-color: black;
+color: #fff;
+border-radius: 6px;
+padding: 5px 2px;
+margin-left:-5%;
+font-family:arial,san sarif;
+ opacity: 0;
+ transition: opacity 3s;
+  }
+.tool::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: black transparent transparent transparent;
+}
+div:hover .tool{
+visibility: visible;
+opacity: 1;
+}
+</style>
+<body>
+<a href=""><div class="viv"><strong><font id="viv">f</font></strong>
+<span class="tool">view facebook profile</span>
+</div></a>
+<a href=""><div class="viv1"><strong><font id="viv1">G</font></strong>
+<span class="tool">view google profile</span>
+</div></a>
+<a href=""><div class="vive"><strong><font id="vive">t</font></strong>
+<span class="tool">view twitter profile</span>
+</div></a>
+<a href=""><div class="vivek"><strong><font id="vivek">in</font></strong>
+<span class="tool">view linkdin profile</span>
+</div></a>
+<p></p>
+</body>
+</html>
